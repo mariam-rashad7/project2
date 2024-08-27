@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgColor:#0171f9;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgColor);
+    padding: 10px 80px;
+}
+.header .logo{
+    width: 100px;
+}
+.header  span {
+   display: none;
+   
+}
+ .header .headerLinks a{
+    color: white; text-decoration: none;
+    padding: 10px 20px;
+
+   
+ }
+ .header .headerLinks a:hover{
+    background-color: #2386fe;
+    border-radius: 15px;
+ }
+.btn{
+    background-color: #ee6268;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+ }
+.btn:hover{
+    background-color: #f2858c;
+ }
+ @media (max-width:770px){
+    .header .headerLinks {
+        display: none;
+    }
+    .header  span{
+       font-size: 50px;
+       line-height: 1;
+       color: white;
+        display: block;
+    }
+ }
+
+ /* //ending of header// */
+ /*  landing page */
+ .landingPage{
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    color: white;
+    border-radius: 0 0 60px 60px;
+ }
+
+ .landingPage .landingPage-left{
+    max-width: 600px;
+
+ }
+ .landingPage.landingPage-left h2{
+    padding: 10px 0;
+ }
+ .landingPage .landingPage-left h1{
+    padding: 10px 0;
+ }
+ .landingPage .landingPage-left p{
+    padding: 10px 0;
+    line-height: 1.2;
+    letter-spacing: 2px;
+ }
+ .landingPage-left .landingPage-search{
+    padding: 15px 0;
+ }
+ .landingPage-left .landingPage-search input{
+    height: 30px;
+   
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 15px;
+ }
+ .landingPage-left .landingPage-search button{
+    position: absolute;
+   left: 200px;
+   height: 30px;
+ }
+ .landingPage-right img{
+    width: 350px;
+ }
+
+ @media (max-width:990px){
+    .landingPage{
+        flex-direction: column;
+        padding: 50px 10px;
+        text-align: center;
+    }
+    .landingPage .landingPage-left{
+                
+        width: 100%;
+    }
+    .landingPage-left .landingPage-search button{
+        position:static;
+  
+     }
+    .landingPage-right img{
+        padding-top: 20px;
+        width: 100%;
+     }
+ }
+ /*//  landing page //*/
+/* trandingPage */
+.trandingPage{
+    padding: 50px 80px;
+}
+.informations .heading{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informations span{
+    color: #ee6268;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.trandingPage-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.trandingPage-cards .card {
+    width: 300px;
+    background-color: #eeeeee;
+    border-radius: 15px;
+}
+
+@media (max-width:900px){
+    .trandingPage-cards{
+        flex-direction: column;
+        
+    }
+    .trandingPage-cards .card{
+        margin: auto;
+        width: 100%;
+    }
+    .trandingPage-cards .card img{
+        width: 100%;
+    }
+}
+.trandingPage-cards .card img{
+    border-radius: 15px 15px 0 0;
+}
+.trandingPage-cards .card .info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 10px;
+
+}
+.trandingPage-cards .card .info .text p{
+    color: #b7b5b5;
+}
+.trandingPage-cards .card .info a img{
+    width: 50px;
+    
+}/*// trandingPage //*/
+/* topGamesPlayed */
+.topGamesPlayed{
+    padding: 50px 80px;
+    background-color: #eeeeee;
+    border-radius: 50px;
+}
+.topGamesPlayed-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.topGamesPlayed-cards .topGamesPlayed-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.topGamesPlayed-cards .topGamesPlayed-card img{
+    border-radius: 15px;
+}
+.topGamesPlayed-cards .topGamesPlayed-card p{
+    color: #b7b5b5;
+}
+@media (max-width:900px){
+    .topGamesPlayed-cards{
+        flex-direction: column;
+        
+    }
+    .topGamesPlayed-cards .topGamesPlayed-card{
+        margin: auto;
+        width: 100%;
+        padding-bottom: 30px;
+      
+    }
+    .topGamesPlayed-cards .topGamesPlayed-card button{
+        width: 40%;
+        margin: auto;
+        
+    }
+    .trandingPage-cards .topGamesPlayed-card img{
+        width: 100%;
+    }
+}
+
+
+/*// topGamesPlayed //*/
+/* categories */
+.categories{
+    padding: 50px 80px;
+
+}
+.categories .informations{
+    text-align: center;
+}
+ .categories-cards{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 40px;
+
+    color: white;
+ }
+ .categories-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--bgColor);
+
+ }
+ .categories-card p{
+  padding: 10px;
+ }
+ .categories-card img{
+    border-radius: 20px;
+    height: 100%;
+ }
+ div{
+    overflow: hidden;
+ }
+ @media (max-width:900px){
+  .categories-cards{
+        flex-direction: column;
+        
+    }
+     .categories-cards  .categories-card{
+        margin: auto;
+        width: 100%;
+       margin-bottom: 30px;
+      
+    }
+    .topGamesPlayed-cards .topGamesPlayed-card button{
+        width: 40%;
+        margin: auto;
+        
+    }
+    .categories-cards  .categories-card img{
+        width: 100%;
+    }
+}
+
+
+/*// categories// */
+.footer{
+    padding: 50px 80px;
+    background-color: var(--bgColor);
+    border-radius: 50px 50px 0 0;
+    text-align: center;
+    color: white;
+}
+
